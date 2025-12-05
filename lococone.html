@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <title>Blake Taylor - Chick'nCone Re-Brand</title>
 
+    <style>
+      :root {
+        --dark-brown: #4a3e36;
+        --light-beige: #f4e9d7;
+        --mid-brown: #79685a;
+        --dark-green: #294023;
+      }
+
+      body {
+        font-family: "Gentium Plus", serif; 
+        background-color: var(--light-beige);
+        color: var(--dark-brown);
+        margin: 0;
+        padding-top: 60px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .nav-bar {
+        background-color: var(--dark-green);
+        color: var(--light-beige);
+        font-family: "Gentium Plus", sans-serif;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 5%;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .nav-left {
+        font-weight: 700;
+        position: absolute;
+        left: 5%; 
+      }
+
+      .social {
+        position: absolute;
+        right: 5%;
+        font-weight: bold;
+        color: var(--light-beige);
+      }
+
+      .nav-left a {
+        margin-right: 20px;
+        font-size: 14px;
+        color: var(--light-beige);
+      }
+
+      .logo, .social {
+        font-weight: bold;
+      }
+
+      .project-intro {
+        text-align: center;
+        width: 90%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+      .project-intro h1 {
+        font-family: 'Gentium Plus', serif;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .project-intro h2 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 25px;
+        color: #777;
+      }
+
+      .project-intro p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .project-links a {
+        font-weight: 700;
+        margin: 0 15px;
+        font-size: 16px;
+        color: var(--dark-brown); 
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 1px solid var(--dark-brown);
+      }
+
+      main {
+        flex-grow: 1; 
+        padding-bottom: 40px;
+        text-align: center;
+      }
+
+      .project-loco-cone {
+        max-width: 700px; 
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+        overflow: hidden; 
+      }
+
+      .loco-cone-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .footer {
+          background-color: var(--dark-brown);
+          color: var(--light-beige);
+          text-align: center;
+          padding: 15px;
+          font-size: 12px;
+          margin-top: auto;
+      }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="index.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="logo">BT</div>
+            <a href="#" class="social">(in)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-intro">
+            <h1>Chick'nCone - A Business Re-Brand</h1>
+            <h2>November 2025</h2>
+            
+            <p>
+                This re-brand was a project for my GBDA 202 Design course. We were tasked with completely redesigning the brand of a business. I landed on Chick'nCone - a unique chicken shop franchise. I combined this assignment with my GBDA 228 Web Design class, redoing their website as well.
+            </p>
+            
+            <p>
+                Fun fact: The Waterloo location of Chick'nCone closed down 2 weeks before I finished this project.
+            </p>
+
+            <div class="project-links">
+                <a href="#">pdf Download</a>
+                <a href="#">Figma Website</a>
+            </div>
+        </section>
+        
+        <div class="project-loco-cone">
+            <img src="boards.png" alt="Full Chick'nCone Project" class="loco-cone-image">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>All Work © Blake Taylor 2025</p>
+    </footer>
+
+</body>
+</html>
