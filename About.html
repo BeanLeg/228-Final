@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;0,700&display=swap" rel="stylesheet">
+    
+    <title>Blake Taylor - About</title>
 
+    <style>
+      
+      :root {
+        --dark-brown: #4a3e36;
+        --light-beige: #FFECCF;
+        --mid-brown: #79685a;
+        --dark-green: #294023;
+      }
+
+      body {
+        font-family: "Gentium Plus", serif; 
+        background-color: var(--light-beige);
+        color: var(--dark-brown);
+        margin: 0;
+        padding-top: 60px;
+        line-height: 1.6;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--light-beige);
+      }
+
+      .nav-bar {
+        background-color: var(--dark-green);
+        color: var(--light-beige);
+        font-family: "Gentium Plus", serif;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 5%;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .nav-left {
+        font-weight: 700;
+        position: absolute;
+        left: 5%; 
+      }
+
+      .social {
+        position: absolute;
+        right: 5%;
+        font-weight: bold;
+        color: var(--light-beige);
+      }
+
+      .nav-left a {
+        margin-right: 20px;
+        font-size: 14px;
+        color: var(--light-beige);
+      }
+
+      .logo, .social {
+        font-weight: bold;
+      }
+
+      .about-content {
+        width: 90%;
+        max-width: 650px;
+        margin: 40px auto;
+        text-align: center;
+      }
+
+      .me-image-container {
+        width: 100%;
+        padding: 10px;
+        background-color: var(--dark-brown);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .me-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .about-text p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        text-align: left;
+        font-weight: 400;
+      }
+
+      .footer {
+        background-color: var(--dark-brown);
+        color: var(--light-beige);
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 600px) {
+        .about-text p {
+          font-size: 16px;
+        }
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="nav-left">
+          <a href="index.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="logo">BT</div>
+        <a href="#" class="social">(in)</a>
+      </nav>
+    </header>
+
+    <main class="about-content">
+        <div class="me-image-container">
+            <img src="Me.jpg" alt="A picture of a blonde dude subtly smiling" class="me-image">
+        </div>
+        
+        <div class="about-text">
+            <p>
+                Hi, I'm Blake. I'm currently going for my Bachelor of Global Business and Digital Arts at the University of Waterloo with a minor in Economics.
+            </p>
+            <p>
+                I have a huge passion for creative storytelling and I believe every design should tell a story, no matter how big or small the project.
+            </p>
+            <p>
+                I draw a lot of inspiration for my work from TV shows and anime. Some examples are Breaking Bad, Andor, and Attack on Titan. These shows in particular showed me how much complexity and deep meaning there can be behind beautiful works of art.
+            </p>
+            <p>
+                In addition to my love for design, I have a strong background in business and technology. Business wise, I have experience in economics, accounting and marketing. And on the tech side I have experience in basic programming and creating websites.
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>All Work © Blake Taylor 2025</p>
+    </footer>
+
+</body>
+</html>
