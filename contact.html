@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<title>Blake Taylor - Contact</title>
+
+  <style>
+
+    :root {
+      --dark-brown: #4a3e36;
+      --light-beige: #f4e9d7;
+      --mid-brown: #79685a;
+      --dark-green: #294023;
+    }
+
+    body {
+      font-family: "Gentium Plus", serif; 
+      background-color: var(--light-beige);
+      color: var(--dark-brown);
+      margin: 0;
+      padding-top: 60px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .nav-bar {
+      background-color: var(--dark-green);
+      color: var(--light-beige);
+      font-family: "Gentium Plus", serif;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 5%;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-left {
+      font-weight: 700;
+      position: absolute;
+      left: 5%; 
+    }
+
+    .social {
+      position: absolute;
+      right: 5%;
+      font-weight: bold;
+      color: var(--light-beige);
+    }
+
+    .nav-left a {
+      margin-right: 20px;
+      font-size: 14px;
+      color: var(--light-beige);
+    }
+
+    .logo, .social {
+      font-weight: bold;
+    }
+
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px 5%;
+    }
+
+    .contact-content h1 {
+      font-family: 'Gentium Plus', serif;
+      font-weight: 700;
+      font-size: 60px;
+      margin-bottom: 20px;
+      margin-top: -40px;
+    }
+
+    .contact-content p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .contact-email {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark-brown); 
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: var(--dark-brown);
+      color: var(--light-beige);
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      margin-top: auto;
+    }
+    </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="logo">BT</div>
+      <a href="#" class="social">(in)</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-content">
+      <h1>Let's Connect!</h1>
+      <p>Contact me at</p>
+      <a href="mailto:blaketaylordesign@gmail.com" class="contact-email">
+          blaketaylordesign@gmail.com
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>All Work © Blake Taylor 2025</p>
+  </footer>
+
+</body>
+</html>
