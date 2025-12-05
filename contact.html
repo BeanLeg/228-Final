@@ -38,28 +38,26 @@
     .nav-bar {
       background-color: var(--dark-green);
       color: var(--light-beige);
-      font-family: "Gentium Plus", serif;
+      font-family: "Gentium Plus", sans-serif;
       font-size: 25px;
+      position: fixed; 
+      top: 0;          
+      width: 100%;     
+      z-index: 1000;   
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding: 15px 5%;
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
     .nav-left {
       font-weight: 700;
-      position: absolute;
-      left: 5%; 
+      padding: 15px 0 15px 5%; 
     }
 
     .social {
-      position: absolute;
-      right: 5%;
       font-weight: bold;
       color: var(--light-beige);
+      padding: 15px 5% 15px 0;
     }
 
     .nav-left a {
@@ -70,6 +68,13 @@
 
     .logo, .social {
       font-weight: bold;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px 0; 
     }
 
 

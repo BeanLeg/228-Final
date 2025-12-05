@@ -10,133 +10,138 @@
     <title>Blake Taylor - Chick'nCone Re-Brand</title>
 
     <style>
-      :root {
-        --dark-brown: #4a3e36;
-        --light-beige: #f4e9d7;
-        --mid-brown: #79685a;
-        --dark-green: #294023;
-      }
+        :root {
+            --dark-brown: #4a3e36;
+            --light-beige: #f4e9d7;
+            --mid-brown: #79685a;
+            --dark-green: #294023;
+        }
 
-      body {
-        font-family: "Gentium Plus", serif; 
-        background-color: var(--light-beige);
-        color: var(--dark-brown);
-        margin: 0;
-        padding-top: 60px;
-        line-height: 1.6;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+        body {
+            font-family: "Gentium Plus", serif; 
+            background-color: var(--light-beige);
+            color: var(--dark-brown);
+            margin: 0;
+            padding-top: 60px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-      .nav-bar {
-        background-color: var(--dark-green);
-        color: var(--light-beige);
-        font-family: "Gentium Plus", sans-serif;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 5%;
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+        .nav-bar {
+            background-color: var(--dark-green);
+            color: var(--light-beige);
+            font-family: "Gentium Plus", sans-serif;
+            font-size: 25px;
+            position: fixed; 
+            top: 0;          
+            width: 100%;     
+            z-index: 1000;   
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-      .nav-left {
-        font-weight: 700;
-        position: absolute;
-        left: 5%; 
-      }
+        .nav-left {
+            font-weight: 700;
+            padding: 15px 0 15px 5%; 
+        }
 
-      .social {
-        position: absolute;
-        right: 5%;
-        font-weight: bold;
-        color: var(--light-beige);
-      }
+        .social {
+            font-weight: bold;
+            color: var(--light-beige);
+            padding: 15px 5% 15px 0;
+        }
 
-      .nav-left a {
-        margin-right: 20px;
-        font-size: 14px;
-        color: var(--light-beige);
-      }
+        .nav-left a {
+            margin-right: 20px;
+            font-size: 14px;
+            color: var(--light-beige);
+        }
 
-      .logo, .social {
-        font-weight: bold;
-      }
+        .logo, .social {
+            font-weight: bold;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 0; 
+        }
 
-      .project-intro {
-        text-align: center;
-        width: 90%;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 40px 0;
-      }
+        .project-intro {
+            text-align: center;
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
 
-      .project-intro h1 {
-        font-family: 'Gentium Plus', serif;
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 5px;
-      }
+        .project-intro h1 {
+            font-family: 'Gentium Plus', serif;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
 
-      .project-intro h2 {
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 25px;
-        color: #777;
-      }
+        .project-intro h2 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 25px;
+            color: #777;
+        }
 
-      .project-intro p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 1.6;
-      }
+        .project-intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
 
-      .project-links a {
-        font-weight: 700;
-        margin: 0 15px;
-        font-size: 16px;
-        color: var(--dark-brown); 
-        text-decoration: none;
-        padding-bottom: 2px;
-        border-bottom: 1px solid var(--dark-brown);
-      }
+        .project-links a {
+            font-weight: 700;
+            margin: 0 15px;
+            font-size: 16px;
+            color: var(--dark-brown); 
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 1px solid var(--dark-brown);
+        }
 
-      main {
-        flex-grow: 1; 
-        padding-bottom: 40px;
-        text-align: center;
-      }
+        main {
+            flex-grow: 1; 
+            padding-bottom: 40px;
+            text-align: center;
+        }
 
-      .project-loco-cone {
-        max-width: 700px; 
-        width: 90%;
-        margin: 0 auto;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-        overflow: hidden; 
-      }
+        .project-loco-cone {
+            max-width: 700px; 
+            width: 90%;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+            overflow: hidden; 
+        }
 
-      .loco-cone-image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+        .loco-cone-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-      .footer {
-          background-color: var(--dark-brown);
-          color: var(--light-beige);
-          text-align: center;
-          padding: 15px;
-          font-size: 12px;
-          margin-top: auto;
-      }
+        .footer {
+            background-color: var(--dark-brown);
+            color: var(--light-beige);
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            margin-top: auto;
+        }
     </style>
 </head>
 

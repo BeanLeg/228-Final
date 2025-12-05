@@ -33,41 +33,46 @@
       }
 
       .nav-bar {
-        background-color: var(--dark-green);
-        color: var(--light-beige);
-        font-family: "Gentium Plus", serif;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 5%;
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+            background-color: var(--dark-green);
+            color: var(--light-beige);
+            font-family: "Gentium Plus", serif;
+            font-size: 25px;
+            position: fixed; 
+            top: 0;          
+            width: 100%;     
+            z-index: 1000;   
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-      .nav-left {
-        font-weight: 700;
-        position: absolute;
-        left: 5%; 
-      }
+        .nav-left {
+            font-weight: 700;
+            padding: 15px 0 15px 5%; 
+        }
 
-      .social {
-        position: absolute;
-        right: 5%;
-        font-weight: bold;
-        color: var(--light-beige);
-      }
+        .social {
+            font-weight: bold;
+            color: var(--light-beige);
+            padding: 15px 5% 15px 0;
+        }
 
-      .nav-left a {
-        margin-right: 20px;
-        font-size: 14px;
-        color: var(--light-beige);
-      }
+        .nav-left a {
+            margin-right: 20px;
+            font-size: 14px;
+            color: var(--light-beige);
+        }
 
-      .logo, .social {
-        font-weight: bold;
-      }
+        .logo, .social {
+            font-weight: bold;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 0; 
+        }
 
       .about-content {
         width: 90%;
