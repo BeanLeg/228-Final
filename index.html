@@ -1,23 +1,223 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+<title>Blake Taylor Portfolio</title>
+
 <style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+
+  :root {
+  --dark-brown: #4a3e36;
+  --light-beige: #f4e9d7;
+  --mid-brown: #79685a;
+  --dark-green: #294023;
   }
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
+  body {
+    font-family: "Gentium Plus", sans-serif;
+    background-color: var(--light-beige);
+    color: var(--dark-brown);
+    margin: 0;
   }
-</style>
+
+  a {
+    text-decoration: none;
+    color: var(--light-beige);
+  }
+
+  .nav-bar {
+    background-color: var(--dark-green);
+    color: var(--light-beige);
+    font-family: "Gentium Plus", sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5%;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
     
+  .nav-left {
+  font-weight: 700;
+  position: absolute;
+  left: 5%; 
+  }
+    
+.social {
+  position: absolute;
+  right: 5%;
+  font-weight: bold;
+}
+
+  .nav-left a {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  .logo, .social {
+    font-weight: bold;
+  }
+
+  .hero-text {
+    text-align: center;
+    padding: 30px 0 50px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 60px;
+    font-weight: 1000;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+
+  .hero-text p {
+    margin-bottom: -10px;
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-style: italic
+
+  }
+
+  .feature-section {
+    background-color: var(--dark-brown);
+    padding: 20px 5%;
+  }
+
+  .feature-section h2 {
+    border-top: 25px;
+    color: var(--light-beige);
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .feature-project {
+    width: 90%;
+    max-width: 500px; 
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--light-beige);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .works-section {
+    padding: 40px 5%;
+
+  }
+
+  .works-section h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .works-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .work-item {
+    width: 30%;
+    padding: 10px;
+    background-color: var(--light-beige);
+    border: 1px solid #ccc;
+  }
+
+  .loco-cone { background-color: var(--dark-green); }
+  .sword { background-color: var(--dark-green); }
+  .magazine { background-color: var(--dark-green); }
+
+  .work-image {
+    width: 100%;
+    display: block;
+  }
+
+  .footer {
+    background-color: var(--dark-brown);
+    color: var(--light-beige);
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+
+  /* Should adjust for different browsers */
+  @media (max-width: 600px) {
+    .works-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .work-item {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">BT</div>
+            <div class="social">(in)</div>
+        </div>
+
+        <div class="hero-text">
+            <h1>Blake Taylor</h1>
+            <p>Design</p>
+            <p>Business</p>
+            <p>Storytelling</p>
+        </div>
+    </header>
+
+    <section class="feature-section">
+        <h2>Feature Project</h2>
+        <div class="project-box feature-project">
+            <img src="Chick'nConeThumbnail.png" alt="CHICK'N'CONE Project" class="project-image">
+        </div>
+    </section>
+
+    <section class="works-section">
+        <h2>All Works</h2>
+        <div class="works-container">
+            <div class="project-box work-item loco-cone">
+                <img src="lococone.png" alt="Loco Cone" class="work-image">
+            </div>
+            <div class="project-box work-item sword">
+                <img src="sword.png" alt="Pirate Sword" class="work-image">
+            </div>
+            <div class="project-box work-item magazine">
+                <img src="magazine.png" alt="Another Brick" class="work-image">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>All Work © Blake Taylor 2025</p>
+    </footer>
+
+</body>
+</html>
