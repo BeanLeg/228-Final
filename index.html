@@ -112,6 +112,13 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
+  .feature-project:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+  }
 
   .project-image {
     display: block;
@@ -174,6 +181,13 @@
       max-width: 300px;
     }
   }
+  
+  .work-item:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+  }
 
   </style>
 </head>
@@ -198,25 +212,30 @@
     </header>
 
     <section class="feature-section">
-        <h2>Feature Project</h2>
-        <div class="project-box feature-project">
-            <img src="Chick'nConeThumbnail.png" alt="CHICK'N'CONE Project" class="project-image">
-        </div>
+    <h2>Feature Project</h2>
+    
+        <a href="lococone.html" class="feature-link"> 
+            <div class="project-box feature-project">
+                <img src="Chick'nConeThumbnail.png" alt="CHICK'N'CONE Project" class="project-image">
+            </div>
+        </a>
     </section>
 
     <section class="works-section">
         <h2>All Works</h2>
         <div class="works-container">
-            <div class="project-box work-item loco-cone">
-                <img src="lococone.png" alt="Loco Cone" class="work-image">
-            </div>
-            <div class="project-box work-item sword">
-                <img src="sword.png" alt="Pirate Sword" class="work-image">
-            </div>
-            <div class="project-box work-item magazine">
-                <img src="magazine.png" alt="Another Brick" class="work-image">
-            </div>
-        </div>
+          <a href="lococone.html" class="project-box work-item loco-cone">
+              <img src="lococone.png" alt="Loco Cone Project" class="work-image">
+          </a>
+
+          <a href="icons.html" class="project-box work-item sword">
+              <img src="sword.png" alt="Pirate Sword Project" class="work-image">
+          </a>
+
+          <a href="magazine.html" class="project-box work-item magazine">
+              <img src="magazine.png" alt="Another Brick Project" class="work-image">
+    </a>
+</div>
     </section>
 
     <footer class="footer">
